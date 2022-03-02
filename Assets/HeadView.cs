@@ -21,30 +21,36 @@ namespace MiniMission
 
         // Текущий поворот
         private Quaternion targetRot;
-        
+
+        public bool isActive;
         void Start()
         {
             // Сохраняем текущий поворот
             targetRot = transform.rotation;
+            isActive = true;
         }
         
         void Update()
         {
-            // Получаем значения поворота мыши и умножаем на чувствительность поворота
-            float rotY = Input.GetAxis("Mouse X") * sensitivityX;
-            float rotX = Input.GetAxis("Mouse Y") * sensitivityY;
 
-            // Определяем необходимую ось вращения
-            if (options == Options.X)
-                // Устанавливаем текущий поворот на необходимый угол
-                targetRot *= Quaternion.Euler(-rotX, 0.0f, 0.0f);
-            else if (options == Options.Y)
-                targetRot *= Quaternion.Euler(0.0f, rotY, 0.0f);
-            else if (options == Options.XandY)
-                targetRot *= Quaternion.Euler(-rotX, rotY, 0.0f);
-
-            // Поворачиваем объект
-            transform.localRotation = targetRot;
+            if (isActive)
+            {
+                // Получаем значения поворота мыши и умножаем на чувствительность поворота
+                float rotY = Input.GetAxis("Mouse X") * sensitivityX;
+                float rotX = Input.GetAxis("Mouse Y") * sensitivityY;
+                
+                // Определяем необходимую ось вращения
+                if (options == Options.X) 
+                    // Устанавливаем текущий поворот на необходимый угол
+                    targetRot *= Quaternion.Euler(-rotX, 0.0f, 0.0f);
+                else if (options == Options.Y) 
+                    targetRot *= Quaternion.Euler(0.0f, rotY, 0.0f);
+                else if (options == Options.XandY)
+                    targetRot *= Quaternion.Euler(-rotX, rotY, 0.0f);
+                
+                // Поворачиваем объект
+                transform.localRotation = targetRot;
+            }
         }
     }
 }
