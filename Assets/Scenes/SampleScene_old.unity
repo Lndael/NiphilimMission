@@ -6522,7 +6522,7 @@ PrefabInstance:
     - target: {fileID: 3079558895049895278, guid: 858c892cc4c0f9e42b2f7deab86a413d,
         type: 3}
       propertyPath: m_Range
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3079558895049895278, guid: 858c892cc4c0f9e42b2f7deab86a413d,
         type: 3}
@@ -38270,6 +38270,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1688074808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ef8fb837ff894e244b5baa829220d177,
+    type: 3}
+  m_PrefabInstance: {fileID: 1907558401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1688074809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688074808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bc4cddd95bb014e8a7c219f1e164f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1691012894 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 07cca65115dd6ef4b8d46ca2d3ce9e40,
@@ -76770,7 +76788,7 @@ ParticleSystemRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0

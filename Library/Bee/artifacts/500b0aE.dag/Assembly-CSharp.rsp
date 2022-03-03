@@ -319,6 +319,7 @@
 "Assets/FirstPersonController.cs"
 "Assets/HeadView.cs"
 "Assets/NephilimShipComponent.cs"
+"Assets/rotator.cs"
 -langversion:8.0
 
 /deterministic
