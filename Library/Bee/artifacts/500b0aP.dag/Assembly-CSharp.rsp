@@ -93,6 +93,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.24f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
@@ -275,6 +276,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
+-r:"Library/Bee/artifacts/500b0aP.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/UnityEngine.UI.ref.dll"
@@ -289,6 +291,7 @@
 "Assets/FirstPersonController.cs"
 "Assets/HeadView.cs"
 "Assets/NephilimShipComponent.cs"
+"Assets/rotator.cs"
 -langversion:8.0
 
 /deterministic
